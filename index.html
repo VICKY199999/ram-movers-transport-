@@ -3,165 +3,173 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="RAM Movers & Transport provides reliable home moving, furniture delivery, loading and unloading services across Melbourne." />
+  <meta name="description" content="RAM Movers & Transport provides affordable ute moving, furniture delivery, loading and unloading services across Melbourne and the western suburbs." />
+  <meta name="theme-color" content="#111111" />
   <title>RAM Movers & Transport | Melbourne Moving Services</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --navy:#0d1b2a;
-      --navy-2:#152a40;
+      --black:#0b0c0f;
+      --dark:#15171c;
+      --dark2:#20232a;
       --orange:#ff7a00;
-      --orange-dark:#dd6500;
-      --cream:#fff8ef;
+      --orange2:#ff9f43;
       --white:#ffffff;
-      --text:#17202a;
-      --muted:#667085;
-      --line:#e8e8e8;
-      --shadow:0 16px 40px rgba(13,27,42,.13);
+      --soft:#f6f7f9;
+      --text:#1f2329;
+      --muted:#69717d;
+      --line:#e6e8ec;
+      --shadow:0 18px 50px rgba(0,0,0,.13);
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.6}
     a{text-decoration:none;color:inherit}
-    .container{width:min(1120px,92%);margin:auto}
-    .topbar{background:var(--navy);color:#fff;font-size:.9rem;padding:9px 0}
-    .topbar .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-    .nav-wrap{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:800}
-    .brand-mark{width:48px;height:48px;border-radius:14px;background:var(--orange);display:grid;place-items:center;font-size:1.55rem;box-shadow:0 8px 18px rgba(255,122,0,.3)}
-    .brand-name{font-family:Oswald,sans-serif;font-size:1.35rem;line-height:1}
-    .brand-name small{display:block;font-family:Inter,sans-serif;font-size:.68rem;letter-spacing:.14em;color:var(--orange);margin-top:5px}
-    .nav-links{display:flex;gap:25px;align-items:center;font-weight:600;font-size:.94rem}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--orange);color:#fff;padding:13px 20px;border-radius:10px;font-weight:800;border:0;cursor:pointer;transition:.2s}
-    .btn:hover{background:var(--orange-dark);transform:translateY(-1px)}
-    .btn-outline{background:transparent;border:2px solid #fff}
-    .hero{background:linear-gradient(105deg,rgba(13,27,42,.97),rgba(21,42,64,.88)),url('https://images.unsplash.com/photo-1600518464441-9154a4dea21b?auto=format&fit=crop&w=1800&q=80') center/cover;min-height:640px;color:#fff;display:flex;align-items:center}
-    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center;padding:80px 0}
-    .eyebrow{display:inline-block;background:rgba(255,122,0,.14);color:#ff9c42;border:1px solid rgba(255,156,66,.35);padding:7px 12px;border-radius:999px;font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    img{max-width:100%;display:block}
+    .container{width:min(1160px,92%);margin:auto}
+    .topbar{background:var(--black);color:#fff;font-size:14px}
+    .topbar .container{min-height:38px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .topbar strong{color:var(--orange2)}
+    nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.06)}
+    .nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.02em}
+    .brand-icon{width:50px;height:50px;border-radius:14px;background:linear-gradient(135deg,var(--orange),var(--orange2));display:grid;place-items:center;font-size:26px;box-shadow:0 10px 26px rgba(255,122,0,.28)}
+    .brand-text{font-size:17px;line-height:1.05}
+    .brand-text small{display:block;color:var(--orange);font-size:10px;letter-spacing:.2em;margin-top:5px}
+    .nav-links{display:flex;align-items:center;gap:24px;font-weight:700;font-size:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:11px;padding:14px 21px;background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff;font-weight:900;cursor:pointer;transition:.2s;box-shadow:0 10px 22px rgba(255,122,0,.22)}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-dark{background:var(--black);box-shadow:none}
+    .btn-outline{background:transparent;border:2px solid #fff;box-shadow:none}
+    .hero{position:relative;min-height:720px;color:#fff;display:flex;align-items:center;overflow:hidden;background:
+      linear-gradient(90deg,rgba(6,7,9,.96) 0%,rgba(6,7,9,.82) 43%,rgba(6,7,9,.28) 76%,rgba(6,7,9,.12) 100%),
+      url('assets/ram-ute.jpg') center/cover no-repeat}
+    .hero:after{content:"";position:absolute;inset:auto 0 0;height:130px;background:linear-gradient(transparent,rgba(0,0,0,.42));pointer-events:none}
+    .hero-content{position:relative;z-index:2;max-width:720px;padding:90px 0}
+    .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,159,67,.48);background:rgba(255,122,0,.13);color:#ffb66e;padding:8px 13px;border-radius:999px;font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
     h1,h2,h3{line-height:1.14;margin-top:0}
-    h1{font-family:Oswald,sans-serif;font-size:clamp(3rem,7vw,5.8rem);margin:18px 0 20px;text-transform:uppercase;letter-spacing:-.02em}
+    h1{font-size:clamp(48px,7vw,84px);letter-spacing:-.045em;text-transform:uppercase;margin:19px 0 20px}
     h1 span{color:var(--orange)}
-    .hero p{font-size:1.1rem;color:#d9e1e8;max-width:660px}
-    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
-    .hero-card{background:#fff;color:var(--text);padding:28px;border-radius:22px;box-shadow:var(--shadow)}
-    .hero-card h3{font-size:1.45rem;margin-bottom:5px}
-    .hero-card p{color:var(--muted);font-size:.94rem;margin-top:0}
-    .quote-form{display:grid;gap:13px;margin-top:18px}
-    .quote-form input,.quote-form select,.quote-form textarea{width:100%;padding:13px 14px;border:1px solid #d8dde3;border-radius:9px;font:inherit;background:#fff}
-    .quote-form textarea{min-height:88px;resize:vertical}
-    section{padding:88px 0}
-    .section-head{text-align:center;max-width:720px;margin:0 auto 42px}
-    .section-head h2{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:clamp(2.2rem,4vw,3.4rem);margin-bottom:12px}
-    .section-head p{color:var(--muted)}
-    .services{background:var(--cream)}
+    .hero p{font-size:19px;color:#e2e5e9;max-width:650px}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+    .trust-row{display:flex;gap:18px;flex-wrap:wrap;margin-top:32px;font-weight:700;color:#e4e7eb;font-size:14px}
+    .trust-row span:before{content:"✓";color:var(--orange2);margin-right:7px}
+    section{padding:92px 0}
+    .section-head{text-align:center;max-width:780px;margin:0 auto 44px}
+    .section-head h2{font-size:clamp(36px,5vw,56px);text-transform:uppercase;letter-spacing:-.035em;margin:12px 0}
+    .section-head p{color:var(--muted);font-size:17px}
+    .services{background:var(--soft)}
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-    .card{background:#fff;border:1px solid #eee;border-radius:18px;padding:28px;box-shadow:0 8px 24px rgba(13,27,42,.06)}
-    .card-icon{width:55px;height:55px;border-radius:14px;background:#fff0e1;display:grid;place-items:center;font-size:1.65rem;margin-bottom:20px}
-    .card h3{margin-bottom:8px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:0 10px 34px rgba(0,0,0,.055);transition:.2s}
+    .card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .card-icon{width:58px;height:58px;border-radius:15px;background:#fff1e5;display:grid;place-items:center;font-size:29px;margin-bottom:19px}
+    .card h3{font-size:21px;margin-bottom:10px}
     .card p{color:var(--muted);margin:0}
-    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
-    .about-visual{background:linear-gradient(145deg,var(--orange),#ff9b3d);border-radius:28px;min-height:430px;position:relative;overflow:hidden;display:grid;place-items:center;color:#fff;font-size:8rem;box-shadow:var(--shadow)}
-    .about-badge{position:absolute;bottom:24px;left:24px;right:24px;background:rgba(13,27,42,.93);border-radius:16px;padding:18px 20px;font-size:1rem}
-    .about-copy h2{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:clamp(2.3rem,4vw,3.5rem)}
-    .checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:25px 0}
-    .check{background:#f7f8fa;border-radius:10px;padding:12px;font-weight:700}
-    .equipment{background:var(--navy);color:#fff}
-    .equipment .section-head p{color:#c6d0da}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:62px;align-items:center}
+    .image-wrap{position:relative}
+    .about-img{min-height:520px;border-radius:26px;background:url('assets/ram-ute.jpg') center/cover no-repeat;box-shadow:var(--shadow)}
+    .floating-card{position:absolute;left:24px;right:24px;bottom:24px;background:rgba(11,12,15,.92);color:#fff;border-radius:17px;padding:21px;border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px)}
+    .floating-card strong{color:var(--orange2)}
+    .about-copy h2{font-size:clamp(38px,5vw,58px);text-transform:uppercase;letter-spacing:-.04em;margin:14px 0}
+    .about-copy p{color:var(--muted);font-size:17px}
+    .checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:26px 0}
+    .check{background:var(--soft);border:1px solid var(--line);padding:14px;border-radius:11px;font-weight:800}
+    .check:before{content:"✓";color:var(--orange);margin-right:8px}
+    .equipment{background:linear-gradient(135deg,var(--black),var(--dark));color:#fff}
+    .equipment .section-head p{color:#c5cad2}
     .equipment-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-    .equipment-item{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:26px;text-align:center}
-    .equipment-item div{font-size:2.3rem;margin-bottom:12px}
-    .areas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:25px}
-    .pill{border:1px solid #d8dde3;border-radius:999px;padding:10px 15px;font-weight:700;background:#fff}
-    .cta{padding:55px 0;background:var(--orange);color:#fff}
-    .cta-wrap{display:flex;justify-content:space-between;align-items:center;gap:30px}
-    .cta h2{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:clamp(2rem,4vw,3.2rem);margin-bottom:6px}
-    footer{background:#08131f;color:#cbd5df;padding:45px 0 25px}
-    .footer-grid{display:grid;grid-template-columns:1.3fr .7fr .8fr;gap:35px}
-    footer h4{color:#fff;margin-top:0}
+    .equipment-item{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.11);border-radius:18px;padding:28px;text-align:center}
+    .equipment-item .emoji{font-size:38px;margin-bottom:10px}
+    .equipment-item p{color:#c3c8d0;margin-bottom:0}
+    .equipment-note{text-align:center;color:#c4c9d1;margin:24px auto 0;max-width:780px;font-size:14px}
+    .process{background:#fff}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .step{position:relative;padding:32px;border-radius:18px;background:var(--soft);border:1px solid var(--line)}
+    .step-num{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:var(--orange);color:#fff;font-weight:900;margin-bottom:18px}
+    .faq{background:var(--soft)}
+    .faq-list{max-width:880px;margin:auto;display:grid;gap:13px}
+    details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+    summary{cursor:pointer;font-weight:900}
+    details p{color:var(--muted);margin-bottom:0}
+    .areas{display:flex;justify-content:center;gap:11px;flex-wrap:wrap;margin-top:25px}
+    .pill{border:1px solid var(--line);border-radius:999px;padding:10px 16px;background:#fff;font-weight:800}
+    .quote{background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff}
+    .quote-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:center}
+    .quote-copy h2{font-size:clamp(40px,5vw,60px);text-transform:uppercase;letter-spacing:-.04em;margin:14px 0}
+    .quote-copy p{font-size:17px}
+    .quote-form{background:#fff;border-radius:20px;padding:30px;box-shadow:0 20px 46px rgba(0,0,0,.18);display:grid;gap:13px}
+    input,select,textarea{width:100%;border:1px solid #dfe2e7;border-radius:10px;padding:14px 15px;font:inherit;background:#fff}
+    textarea{min-height:100px;resize:vertical}
+    footer{background:#08090b;color:#c8ccd3;padding:50px 0 28px}
+    .footer-grid{display:grid;grid-template-columns:1.25fr .7fr .85fr;gap:42px}
+    footer h4{color:#fff;margin-bottom:14px}
     footer a{display:block;margin:8px 0}
-    .copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:35px;padding-top:20px;font-size:.88rem}
+    .copyright{border-top:1px solid #24262b;margin-top:35px;padding-top:20px;font-size:13px}
     .mobile-call{display:none}
-    @media(max-width:850px){
+    @media(max-width:900px){
       .nav-links a:not(.btn){display:none}
-      .hero-grid,.about-grid{grid-template-columns:1fr}
-      .hero{min-height:auto}
       .cards{grid-template-columns:1fr 1fr}
+      .about-grid,.quote-grid{grid-template-columns:1fr}
       .equipment-grid{grid-template-columns:1fr 1fr}
+      .steps{grid-template-columns:1fr}
       .footer-grid{grid-template-columns:1fr}
-      .cta-wrap{display:block}
-      .cta-wrap .btn{margin-top:18px}
+      .hero{background-position:60% center}
     }
-    @media(max-width:560px){
+    @media(max-width:580px){
       .topbar .container{justify-content:center}
       .topbar span:last-child{display:none}
-      .nav-wrap{height:70px}
-      .brand-name{font-size:1.05rem}
+      .nav-inner{height:70px}
+      .brand-text{font-size:14px}
       .nav-links .btn{display:none}
-      .hero-grid{padding:58px 0}
-      h1{font-size:3.4rem}
-      section{padding:65px 0}
-      .cards,.equipment-grid,.checklist{grid-template-columns:1fr}
+      .hero{min-height:710px;background-position:61% center}
+      .hero-content{padding:68px 0}
+      h1{font-size:49px}
       .hero-actions .btn{width:100%}
-      .mobile-call{display:flex;position:fixed;bottom:18px;left:18px;right:18px;z-index:50;box-shadow:0 12px 25px rgba(0,0,0,.28)}
+      section{padding:68px 0}
+      .cards,.equipment-grid,.checks{grid-template-columns:1fr}
+      .about-img{min-height:420px}
+      .mobile-call{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:150;box-shadow:0 12px 30px rgba(0,0,0,.3)}
     }
   </style>
 </head>
 <body>
   <div class="topbar">
     <div class="container">
-      <span>Reliable Moving Services Across Melbourne</span>
-      <span>Call: 0480 631 657</span>
+      <span>Reliable moving help across Melbourne</span>
+      <span>Call <strong>0480 631 657</strong></span>
     </div>
   </div>
 
   <nav>
-    <div class="container nav-wrap">
-      <a class="brand" href="#home">
-        <div class="brand-mark">🚚</div>
-        <div class="brand-name">RAM MOVERS <small>& TRANSPORT</small></div>
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-icon">🛻</span>
+        <span class="brand-text">RAM MOVERS<small>& TRANSPORT</small></span>
       </a>
       <div class="nav-links">
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#equipment">Equipment</a>
-        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
+        <a href="#quote">Quote</a>
         <a class="btn" href="tel:+61480631657">Call Now</a>
       </div>
     </div>
   </nav>
 
   <header class="hero" id="home">
-    <div class="container hero-grid">
-      <div>
-        <span class="eyebrow">Melbourne Movers</span>
-        <h1>Move Easy.<br><span>Move With RAM.</span></h1>
-        <p>Affordable and dependable moving, transport, loading and unloading services for homes, furniture and small deliveries across Melbourne.</p>
-        <div class="hero-actions">
-          <a class="btn" href="tel:+61480631657">📞 Call 0480 631 657</a>
-          <a class="btn btn-outline" href="#contact">Get a Free Quote</a>
-        </div>
+    <div class="container hero-content">
+      <span class="badge">Melbourne & Western Suburbs</span>
+      <h1>Move smart.<br><span>Move with RAM.</span></h1>
+      <p>Professional ute moving, furniture pickup, delivery, loading and unloading services with careful handling and direct communication.</p>
+      <div class="hero-actions">
+        <a class="btn" href="tel:+61480631657">📞 Call 0480 631 657</a>
+        <a class="btn btn-outline" href="#quote">Get a Free Quote</a>
       </div>
-
-      <div class="hero-card">
-        <h3>Request a Free Quote</h3>
-        <p>Tell us what you need moved and we’ll get back to you.</p>
-        <form class="quote-form" onsubmit="sendQuote(event)">
-          <input id="name" type="text" placeholder="Your name" required>
-          <input id="phone" type="tel" placeholder="Your phone number" required>
-          <select id="service" required>
-            <option value="">Select a service</option>
-            <option>House Moving</option>
-            <option>Furniture Delivery</option>
-            <option>Loading & Unloading</option>
-            <option>Small Move</option>
-            <option>Transport Service</option>
-          </select>
-          <textarea id="details" placeholder="Pickup, drop-off and items to move"></textarea>
-          <button class="btn" type="submit">Send Quote Request</button>
-        </form>
+      <div class="trust-row">
+        <span>Affordable pricing</span>
+        <span>Protective blankets</span>
+        <span>Moving straps</span>
+        <span>Flexible bookings</span>
       </div>
     </div>
   </header>
@@ -169,36 +177,36 @@
   <section class="services" id="services">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Our Services</span>
-        <h2>Moving Help You Can Rely On</h2>
-        <p>Practical moving and transport support for local jobs of different sizes.</p>
+        <span class="badge">Our Services</span>
+        <h2>Moving help built around you</h2>
+        <p>Ideal for local jobs, furniture delivery, small moves and loading support across Melbourne.</p>
       </div>
       <div class="cards">
-        <div class="card"><div class="card-icon">🏠</div><h3>House Moving</h3><p>Careful transport of household furniture, boxes and personal belongings.</p></div>
-        <div class="card"><div class="card-icon">🛋️</div><h3>Furniture Delivery</h3><p>Pickup and delivery for couches, beds, tables, appliances and more.</p></div>
-        <div class="card"><div class="card-icon">💪</div><h3>Loading & Unloading</h3><p>Extra hands to safely load or unload your ute, truck, trailer or storage unit.</p></div>
-        <div class="card"><div class="card-icon">📦</div><h3>Small Moves</h3><p>Ideal for rooms, apartments, marketplace purchases and smaller relocations.</p></div>
-        <div class="card"><div class="card-icon">🚚</div><h3>Transport Service</h3><p>Flexible transport support for bulky items and local deliveries.</p></div>
-        <div class="card"><div class="card-icon">🧤</div><h3>Careful Handling</h3><p>Items are secured using straps and protected with moving blankets.</p></div>
+        <div class="card"><div class="card-icon">🛋️</div><h3>Furniture Delivery</h3><p>Pickup and delivery for couches, beds, tables, appliances and other bulky household items.</p></div>
+        <div class="card"><div class="card-icon">📦</div><h3>Small Moves</h3><p>Bedrooms, apartments, student moves and smaller relocations that suit a ute.</p></div>
+        <div class="card"><div class="card-icon">💪</div><h3>Loading & Unloading</h3><p>Extra hands to safely load or unload your ute, trailer, truck, storage unit or container.</p></div>
+        <div class="card"><div class="card-icon">🛒</div><h3>Marketplace Pickups</h3><p>Convenient pickup and delivery for Facebook Marketplace, Gumtree and retail purchases.</p></div>
+        <div class="card"><div class="card-icon">🏠</div><h3>Household Transport</h3><p>Transport for boxes, furniture and selected household belongings across local suburbs.</p></div>
+        <div class="card"><div class="card-icon">🚚</div><h3>Larger Job Options</h3><p>A suitable larger vehicle may be arranged for jobs beyond ute capacity, subject to availability.</p></div>
       </div>
     </div>
   </section>
 
   <section id="about">
     <div class="container about-grid">
-      <div class="about-visual">
-        🚚
-        <div class="about-badge"><strong>RAM Movers & Transport</strong><br>Local, hardworking and ready to help.</div>
+      <div class="image-wrap">
+        <div class="about-img"></div>
+        <div class="floating-card"><strong>Your actual ute.</strong><br>Real equipment, honest service and no misleading claims.</div>
       </div>
       <div class="about-copy">
-        <span class="eyebrow">Why Choose Us</span>
-        <h2>Honest Service. Careful Moving.</h2>
-        <p>RAM Movers & Transport provides straightforward moving support with a focus on careful handling, clear communication and dependable service.</p>
-        <div class="checklist">
-          <div class="check">✓ Affordable pricing</div>
-          <div class="check">✓ Flexible bookings</div>
-          <div class="check">✓ Careful handling</div>
-          <div class="check">✓ Local Melbourne service</div>
+        <span class="badge">Why Choose RAM</span>
+        <h2>Local, careful and reliable</h2>
+        <p>RAM Movers & Transport focuses on straightforward service, careful handling and good communication from the first call through to delivery.</p>
+        <div class="checks">
+          <div class="check">Clear quotes</div>
+          <div class="check">Local service</div>
+          <div class="check">Careful handling</div>
+          <div class="check">Flexible times</div>
         </div>
         <a class="btn" href="tel:+61480631657">Book Your Move</a>
       </div>
@@ -208,15 +216,30 @@
   <section class="equipment" id="equipment">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Our Equipment</span>
-        <h2>Ready for Your Move</h2>
-        <p>We use practical moving equipment to transport and protect your belongings.</p>
+        <span class="badge">Equipment</span>
+        <h2>Prepared for the job</h2>
+        <p>Practical equipment to help secure and protect suitable loads during transport.</p>
       </div>
       <div class="equipment-grid">
-        <div class="equipment-item"><div>🛻</div><h3>Ute</h3><p>For smaller moves and deliveries.</p></div>
-        <div class="equipment-item"><div>🚚</div><h3>Truck</h3><p>For larger loads and house moves.</p></div>
-        <div class="equipment-item"><div>🪢</div><h3>Moving Straps</h3><p>To secure items during transport.</p></div>
-        <div class="equipment-item"><div>🧣</div><h3>Moving Blankets</h3><p>To help protect furniture from damage.</p></div>
+        <div class="equipment-item"><div class="emoji">🛻</div><h3>Ute</h3><p>Perfect for furniture deliveries, small moves and local transport.</p></div>
+        <div class="equipment-item"><div class="emoji">🪢</div><h3>Moving Straps</h3><p>Used to secure suitable items during transport.</p></div>
+        <div class="equipment-item"><div class="emoji">🧣</div><h3>Moving Blankets</h3><p>Helps protect furniture from rubbing and surface damage.</p></div>
+        <div class="equipment-item"><div class="emoji">🤝</div><h3>Moving Assistance</h3><p>Loading and unloading help for suitable jobs.</p></div>
+      </div>
+      <p class="equipment-note">For loads larger than the ute can safely carry, a suitable vehicle may be arranged after the job details are confirmed.</p>
+    </div>
+  </section>
+
+  <section class="process">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge">How It Works</span>
+        <h2>Simple from quote to delivery</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Send Your Details</h3><p>Tell us the pickup suburb, drop-off suburb, items and preferred date.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Get Your Quote</h3><p>We confirm availability, vehicle suitability and pricing before the booking.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>Move Day</h3><p>Your suitable items are loaded, secured and transported with care.</p></div>
       </div>
     </div>
   </section>
@@ -224,59 +247,92 @@
   <section>
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Service Areas</span>
-        <h2>Moving Across Melbourne</h2>
-        <p>Based around Melbourne’s west and available for jobs across surrounding suburbs.</p>
+        <span class="badge">Service Areas</span>
+        <h2>Melbourne and western suburbs</h2>
+        <p>Contact us to confirm availability for your pickup and delivery locations.</p>
         <div class="areas">
           <span class="pill">Truganina</span><span class="pill">Tarneit</span><span class="pill">Werribee</span>
-          <span class="pill">Hoppers Crossing</span><span class="pill">Point Cook</span><span class="pill">Melbourne</span>
+          <span class="pill">Hoppers Crossing</span><span class="pill">Point Cook</span>
+          <span class="pill">Williams Landing</span><span class="pill">Melbourne</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="cta" id="contact">
-    <div class="container cta-wrap">
-      <div>
-        <h2>Need Help With a Move?</h2>
-        <p>Call RAM Movers & Transport today for a free quote.</p>
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="badge">FAQ</span>
+        <h2>Common questions</h2>
       </div>
-      <a class="btn" style="background:#0d1b2a" href="tel:+61480631657">📞 0480 631 657</a>
+      <div class="faq-list">
+        <details><summary>What kind of jobs can you do with the ute?</summary><p>Furniture delivery, marketplace pickups, boxes, selected household items, smaller room moves and other loads that fit safely within the ute's capacity.</p></details>
+        <details><summary>Do you provide a truck?</summary><p>RAM Movers currently operates with a ute. For suitable larger jobs, a larger vehicle may be arranged after checking availability and job requirements.</p></details>
+        <details><summary>How do I get an accurate quote?</summary><p>Send the pickup and delivery suburbs, clear photos or an item list, access details such as stairs, and your preferred date.</p></details>
+        <details><summary>Do you protect furniture?</summary><p>Moving straps and protective blankets are available for suitable items. The exact handling requirements are confirmed before the job.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote" id="quote">
+    <div class="container quote-grid">
+      <div class="quote-copy">
+        <span class="badge" style="color:#fff;border-color:#fff;background:rgba(255,255,255,.13)">Free Quote</span>
+        <h2>Tell us what you need moved</h2>
+        <p>Complete the form and it will open a prepared text message to RAM Movers & Transport.</p>
+      </div>
+      <form class="quote-form" onsubmit="sendQuote(event)">
+        <input id="name" type="text" placeholder="Your name" required />
+        <input id="phone" type="tel" placeholder="Your phone number" required />
+        <input id="pickup" type="text" placeholder="Pickup suburb" required />
+        <input id="dropoff" type="text" placeholder="Drop-off suburb" required />
+        <select id="service" required>
+          <option value="">Select a service</option>
+          <option>Furniture Delivery</option>
+          <option>Small Move</option>
+          <option>Loading & Unloading</option>
+          <option>Marketplace Pickup</option>
+          <option>Household Transport</option>
+          <option>Larger Job Enquiry</option>
+        </select>
+        <textarea id="details" placeholder="List the items, stairs/access details and preferred date"></textarea>
+        <button class="btn btn-dark" type="submit">Send Quote Request</button>
+      </form>
     </div>
   </section>
 
   <footer>
     <div class="container">
       <div class="footer-grid">
-        <div>
-          <h4>RAM Movers & Transport</h4>
-          <p>Reliable moving, furniture delivery and transport services across Melbourne.</p>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          <a href="#services">Services</a><a href="#about">About</a><a href="#equipment">Equipment</a>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <a href="tel:+61480631657">0480 631 657</a>
-          <span>Melbourne, Victoria</span>
-        </div>
+        <div><h4>RAM Movers & Transport</h4><p>Professional ute moving, furniture delivery and loading support across Melbourne and surrounding suburbs.</p></div>
+        <div><h4>Quick Links</h4><a href="#services">Services</a><a href="#about">About</a><a href="#equipment">Equipment</a><a href="#faq">FAQ</a></div>
+        <div><h4>Contact</h4><a href="tel:+61480631657">0480 631 657</a><span>Melbourne, Victoria</span></div>
       </div>
       <div class="copyright">© 2026 RAM Movers & Transport. All rights reserved.</div>
     </div>
   </footer>
 
-  <a class="btn mobile-call" href="tel:+61480631657">📞 Call RAM Movers Now</a>
+  <a class="btn mobile-call" href="tel:+61480631657">📞 Call RAM Movers</a>
 
   <script>
-    function sendQuote(e){
-      e.preventDefault();
+    function sendQuote(event){
+      event.preventDefault();
       const name = document.getElementById('name').value;
       const phone = document.getElementById('phone').value;
+      const pickup = document.getElementById('pickup').value;
+      const dropoff = document.getElementById('dropoff').value;
       const service = document.getElementById('service').value;
       const details = document.getElementById('details').value;
-      const message = `Hi RAM Movers & Transport,%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AService: ${encodeURIComponent(service)}%0ADetails: ${encodeURIComponent(details)}`;
-      window.location.href = `sms:+61480631657?&body=${message}`;
+      const text =
+`Hi RAM Movers & Transport,
+
+Name: ${name}
+Phone: ${phone}
+Pickup: ${pickup}
+Drop-off: ${dropoff}
+Service: ${service}
+Details: ${details}`;
+      window.location.href = `sms:+61480631657?&body=${encodeURIComponent(text)}`;
     }
   </script>
 </body>
