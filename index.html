@@ -1,339 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="RAM Movers & Transport provides affordable ute moving, furniture delivery, loading and unloading services across Melbourne and the western suburbs." />
-  <meta name="theme-color" content="#111111" />
-  <title>RAM Movers & Transport | Melbourne Moving Services</title>
-  <style>
-    :root{
-      --black:#0b0c0f;
-      --dark:#15171c;
-      --dark2:#20232a;
-      --orange:#ff7a00;
-      --orange2:#ff9f43;
-      --white:#ffffff;
-      --soft:#f6f7f9;
-      --text:#1f2329;
-      --muted:#69717d;
-      --line:#e6e8ec;
-      --shadow:0 18px 50px rgba(0,0,0,.13);
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.6}
-    a{text-decoration:none;color:inherit}
-    img{max-width:100%;display:block}
-    .container{width:min(1160px,92%);margin:auto}
-    .topbar{background:var(--black);color:#fff;font-size:14px}
-    .topbar .container{min-height:38px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    .topbar strong{color:var(--orange2)}
-    nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.06)}
-    .nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.02em}
-    .brand-icon{width:50px;height:50px;border-radius:14px;background:linear-gradient(135deg,var(--orange),var(--orange2));display:grid;place-items:center;font-size:26px;box-shadow:0 10px 26px rgba(255,122,0,.28)}
-    .brand-text{font-size:17px;line-height:1.05}
-    .brand-text small{display:block;color:var(--orange);font-size:10px;letter-spacing:.2em;margin-top:5px}
-    .nav-links{display:flex;align-items:center;gap:24px;font-weight:700;font-size:14px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:11px;padding:14px 21px;background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff;font-weight:900;cursor:pointer;transition:.2s;box-shadow:0 10px 22px rgba(255,122,0,.22)}
-    .btn:hover{transform:translateY(-2px)}
-    .btn-dark{background:var(--black);box-shadow:none}
-    .btn-outline{background:transparent;border:2px solid #fff;box-shadow:none}
-    .hero{position:relative;min-height:720px;color:#fff;display:flex;align-items:center;overflow:hidden;background:
-      linear-gradient(90deg,rgba(6,7,9,.96) 0%,rgba(6,7,9,.82) 43%,rgba(6,7,9,.28) 76%,rgba(6,7,9,.12) 100%),
-      url('assets/ram-ute.jpg') center/cover no-repeat}
-    .hero:after{content:"";position:absolute;inset:auto 0 0;height:130px;background:linear-gradient(transparent,rgba(0,0,0,.42));pointer-events:none}
-    .hero-content{position:relative;z-index:2;max-width:720px;padding:90px 0}
-    .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,159,67,.48);background:rgba(255,122,0,.13);color:#ffb66e;padding:8px 13px;border-radius:999px;font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
-    h1,h2,h3{line-height:1.14;margin-top:0}
-    h1{font-size:clamp(48px,7vw,84px);letter-spacing:-.045em;text-transform:uppercase;margin:19px 0 20px}
-    h1 span{color:var(--orange)}
-    .hero p{font-size:19px;color:#e2e5e9;max-width:650px}
-    .hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
-    .trust-row{display:flex;gap:18px;flex-wrap:wrap;margin-top:32px;font-weight:700;color:#e4e7eb;font-size:14px}
-    .trust-row span:before{content:"✓";color:var(--orange2);margin-right:7px}
-    section{padding:92px 0}
-    .section-head{text-align:center;max-width:780px;margin:0 auto 44px}
-    .section-head h2{font-size:clamp(36px,5vw,56px);text-transform:uppercase;letter-spacing:-.035em;margin:12px 0}
-    .section-head p{color:var(--muted);font-size:17px}
-    .services{background:var(--soft)}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-    .card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:0 10px 34px rgba(0,0,0,.055);transition:.2s}
-    .card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-    .card-icon{width:58px;height:58px;border-radius:15px;background:#fff1e5;display:grid;place-items:center;font-size:29px;margin-bottom:19px}
-    .card h3{font-size:21px;margin-bottom:10px}
-    .card p{color:var(--muted);margin:0}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:62px;align-items:center}
-    .image-wrap{position:relative}
-    .about-img{min-height:520px;border-radius:26px;background:url('assets/ram-ute.jpg') center/cover no-repeat;box-shadow:var(--shadow)}
-    .floating-card{position:absolute;left:24px;right:24px;bottom:24px;background:rgba(11,12,15,.92);color:#fff;border-radius:17px;padding:21px;border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px)}
-    .floating-card strong{color:var(--orange2)}
-    .about-copy h2{font-size:clamp(38px,5vw,58px);text-transform:uppercase;letter-spacing:-.04em;margin:14px 0}
-    .about-copy p{color:var(--muted);font-size:17px}
-    .checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:26px 0}
-    .check{background:var(--soft);border:1px solid var(--line);padding:14px;border-radius:11px;font-weight:800}
-    .check:before{content:"✓";color:var(--orange);margin-right:8px}
-    .equipment{background:linear-gradient(135deg,var(--black),var(--dark));color:#fff}
-    .equipment .section-head p{color:#c5cad2}
-    .equipment-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-    .equipment-item{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.11);border-radius:18px;padding:28px;text-align:center}
-    .equipment-item .emoji{font-size:38px;margin-bottom:10px}
-    .equipment-item p{color:#c3c8d0;margin-bottom:0}
-    .equipment-note{text-align:center;color:#c4c9d1;margin:24px auto 0;max-width:780px;font-size:14px}
-    .process{background:#fff}
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-    .step{position:relative;padding:32px;border-radius:18px;background:var(--soft);border:1px solid var(--line)}
-    .step-num{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:var(--orange);color:#fff;font-weight:900;margin-bottom:18px}
-    .faq{background:var(--soft)}
-    .faq-list{max-width:880px;margin:auto;display:grid;gap:13px}
-    details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px}
-    summary{cursor:pointer;font-weight:900}
-    details p{color:var(--muted);margin-bottom:0}
-    .areas{display:flex;justify-content:center;gap:11px;flex-wrap:wrap;margin-top:25px}
-    .pill{border:1px solid var(--line);border-radius:999px;padding:10px 16px;background:#fff;font-weight:800}
-    .quote{background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff}
-    .quote-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:center}
-    .quote-copy h2{font-size:clamp(40px,5vw,60px);text-transform:uppercase;letter-spacing:-.04em;margin:14px 0}
-    .quote-copy p{font-size:17px}
-    .quote-form{background:#fff;border-radius:20px;padding:30px;box-shadow:0 20px 46px rgba(0,0,0,.18);display:grid;gap:13px}
-    input,select,textarea{width:100%;border:1px solid #dfe2e7;border-radius:10px;padding:14px 15px;font:inherit;background:#fff}
-    textarea{min-height:100px;resize:vertical}
-    footer{background:#08090b;color:#c8ccd3;padding:50px 0 28px}
-    .footer-grid{display:grid;grid-template-columns:1.25fr .7fr .85fr;gap:42px}
-    footer h4{color:#fff;margin-bottom:14px}
-    footer a{display:block;margin:8px 0}
-    .copyright{border-top:1px solid #24262b;margin-top:35px;padding-top:20px;font-size:13px}
-    .mobile-call{display:none}
-    @media(max-width:900px){
-      .nav-links a:not(.btn){display:none}
-      .cards{grid-template-columns:1fr 1fr}
-      .about-grid,.quote-grid{grid-template-columns:1fr}
-      .equipment-grid{grid-template-columns:1fr 1fr}
-      .steps{grid-template-columns:1fr}
-      .footer-grid{grid-template-columns:1fr}
-      .hero{background-position:60% center}
-    }
-    @media(max-width:580px){
-      .topbar .container{justify-content:center}
-      .topbar span:last-child{display:none}
-      .nav-inner{height:70px}
-      .brand-text{font-size:14px}
-      .nav-links .btn{display:none}
-      .hero{min-height:710px;background-position:61% center}
-      .hero-content{padding:68px 0}
-      h1{font-size:49px}
-      .hero-actions .btn{width:100%}
-      section{padding:68px 0}
-      .cards,.equipment-grid,.checks{grid-template-columns:1fr}
-      .about-img{min-height:420px}
-      .mobile-call{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:150;box-shadow:0 12px 30px rgba(0,0,0,.3)}
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RAM Movers provides reliable house moving, furniture delivery, office relocation, piano moving and transport services across Melbourne.">
+  <title>RAM Movers | Melbourne Moving & Transport</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="topbar">
-    <div class="container">
-      <span>Reliable moving help across Melbourne</span>
-      <span>Call <strong>0480 631 657</strong></span>
-    </div>
-  </div>
-
-  <nav>
-    <div class="container nav-inner">
-      <a href="#home" class="brand">
-        <span class="brand-icon">🛻</span>
-        <span class="brand-text">RAM MOVERS<small>& TRANSPORT</small></span>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">
+        <span class="brand-mark">RAM</span>
+        <span class="brand-text">MOVERS</span>
       </a>
-      <div class="nav-links">
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <nav class="nav">
         <a href="#services">Services</a>
         <a href="#about">About</a>
-        <a href="#equipment">Equipment</a>
-        <a href="#faq">FAQ</a>
-        <a href="#quote">Quote</a>
-        <a class="btn" href="tel:+61480631657">Call Now</a>
-      </div>
-    </div>
-  </nav>
-
-  <header class="hero" id="home">
-    <div class="container hero-content">
-      <span class="badge">Melbourne & Western Suburbs</span>
-      <h1>Move smart.<br><span>Move with RAM.</span></h1>
-      <p>Professional ute moving, furniture pickup, delivery, loading and unloading services with careful handling and direct communication.</p>
-      <div class="hero-actions">
-        <a class="btn" href="tel:+61480631657">📞 Call 0480 631 657</a>
-        <a class="btn btn-outline" href="#quote">Get a Free Quote</a>
-      </div>
-      <div class="trust-row">
-        <span>Affordable pricing</span>
-        <span>Protective blankets</span>
-        <span>Moving straps</span>
-        <span>Flexible bookings</span>
-      </div>
+        <a href="#reviews">Reviews</a>
+        <a href="#quote">Get a Quote</a>
+      </nav>
+      <a class="header-call" href="tel:+61480631657">Call 0480 631 657</a>
     </div>
   </header>
 
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-head">
-        <span class="badge">Our Services</span>
-        <h2>Moving help built around you</h2>
-        <p>Ideal for local jobs, furniture delivery, small moves and loading support across Melbourne.</p>
-      </div>
-      <div class="cards">
-        <div class="card"><div class="card-icon">🛋️</div><h3>Furniture Delivery</h3><p>Pickup and delivery for couches, beds, tables, appliances and other bulky household items.</p></div>
-        <div class="card"><div class="card-icon">📦</div><h3>Small Moves</h3><p>Bedrooms, apartments, student moves and smaller relocations that suit a ute.</p></div>
-        <div class="card"><div class="card-icon">💪</div><h3>Loading & Unloading</h3><p>Extra hands to safely load or unload your ute, trailer, truck, storage unit or container.</p></div>
-        <div class="card"><div class="card-icon">🛒</div><h3>Marketplace Pickups</h3><p>Convenient pickup and delivery for Facebook Marketplace, Gumtree and retail purchases.</p></div>
-        <div class="card"><div class="card-icon">🏠</div><h3>Household Transport</h3><p>Transport for boxes, furniture and selected household belongings across local suburbs.</p></div>
-        <div class="card"><div class="card-icon">🚚</div><h3>Larger Job Options</h3><p>A suitable larger vehicle may be arranged for jobs beyond ute capacity, subject to availability.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container about-grid">
-      <div class="image-wrap">
-        <div class="about-img"></div>
-        <div class="floating-card"><strong>Your actual ute.</strong><br>Real equipment, honest service and no misleading claims.</div>
-      </div>
-      <div class="about-copy">
-        <span class="badge">Why Choose RAM</span>
-        <h2>Local, careful and reliable</h2>
-        <p>RAM Movers & Transport focuses on straightforward service, careful handling and good communication from the first call through to delivery.</p>
-        <div class="checks">
-          <div class="check">Clear quotes</div>
-          <div class="check">Local service</div>
-          <div class="check">Careful handling</div>
-          <div class="check">Flexible times</div>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Melbourne Moving & Transport</span>
+          <h1>Move with confidence.<br><span>RAM Movers</span> gets it done.</h1>
+          <p>Reliable house moves, furniture delivery, office relocations and heavy-item transport across Melbourne and surrounding suburbs.</p>
+          <div class="hero-actions">
+            <a class="btn btn-light" href="#quote">Get a Free Quote</a>
+            <a class="btn btn-outline" href="tel:+61480631657">Call Now</a>
+          </div>
+          <div class="trust-row">
+            <div><strong>Careful</strong><span>Handling</span></div>
+            <div><strong>Flexible</strong><span>Bookings</span></div>
+            <div><strong>Fair</strong><span>Pricing</span></div>
+          </div>
         </div>
-        <a class="btn" href="tel:+61480631657">Book Your Move</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="equipment" id="equipment">
-    <div class="container">
-      <div class="section-head">
-        <span class="badge">Equipment</span>
-        <h2>Prepared for the job</h2>
-        <p>Practical equipment to help secure and protect suitable loads during transport.</p>
-      </div>
-      <div class="equipment-grid">
-        <div class="equipment-item"><div class="emoji">🛻</div><h3>Ute</h3><p>Perfect for furniture deliveries, small moves and local transport.</p></div>
-        <div class="equipment-item"><div class="emoji">🪢</div><h3>Moving Straps</h3><p>Used to secure suitable items during transport.</p></div>
-        <div class="equipment-item"><div class="emoji">🧣</div><h3>Moving Blankets</h3><p>Helps protect furniture from rubbing and surface damage.</p></div>
-        <div class="equipment-item"><div class="emoji">🤝</div><h3>Moving Assistance</h3><p>Loading and unloading help for suitable jobs.</p></div>
-      </div>
-      <p class="equipment-note">For loads larger than the ute can safely carry, a suitable vehicle may be arranged after the job details are confirmed.</p>
-    </div>
-  </section>
-
-  <section class="process">
-    <div class="container">
-      <div class="section-head">
-        <span class="badge">How It Works</span>
-        <h2>Simple from quote to delivery</h2>
-      </div>
-      <div class="steps">
-        <div class="step"><div class="step-num">1</div><h3>Send Your Details</h3><p>Tell us the pickup suburb, drop-off suburb, items and preferred date.</p></div>
-        <div class="step"><div class="step-num">2</div><h3>Get Your Quote</h3><p>We confirm availability, vehicle suitability and pricing before the booking.</p></div>
-        <div class="step"><div class="step-num">3</div><h3>Move Day</h3><p>Your suitable items are loaded, secured and transported with care.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <span class="badge">Service Areas</span>
-        <h2>Melbourne and western suburbs</h2>
-        <p>Contact us to confirm availability for your pickup and delivery locations.</p>
-        <div class="areas">
-          <span class="pill">Truganina</span><span class="pill">Tarneit</span><span class="pill">Werribee</span>
-          <span class="pill">Hoppers Crossing</span><span class="pill">Point Cook</span>
-          <span class="pill">Williams Landing</span><span class="pill">Melbourne</span>
+        <div class="quote-card">
+          <span class="small-label">Quick Quote</span>
+          <h2>Tell us about your move</h2>
+          <form id="quoteForm">
+            <div class="form-grid">
+              <input type="text" id="name" placeholder="Your name" required>
+              <input type="tel" id="phone" placeholder="Phone number" required>
+              <input type="text" id="pickup" placeholder="Pickup suburb" required>
+              <input type="text" id="dropoff" placeholder="Drop-off suburb" required>
+              <select id="service" required>
+                <option value="">Select service</option>
+                <option>House Moving</option>
+                <option>Furniture Delivery</option>
+                <option>Office Relocation</option>
+                <option>Piano / Heavy Item Moving</option>
+                <option>Transport Service</option>
+              </select>
+              <input type="date" id="date">
+            </div>
+            <textarea id="details" placeholder="Describe the job, stairs, number of rooms or large items"></textarea>
+            <button class="btn btn-primary full" type="submit">Send Quote Request</button>
+            <p class="form-note">This opens a text message with your details ready to send.</p>
+          </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-head">
-        <span class="badge">FAQ</span>
-        <h2>Common questions</h2>
+    <section class="service-strip">
+      <div class="container strip-grid">
+        <span>✓ House Moves</span>
+        <span>✓ Furniture Delivery</span>
+        <span>✓ Office Moves</span>
+        <span>✓ Piano Moving</span>
+        <span>✓ Local Transport</span>
       </div>
-      <div class="faq-list">
-        <details><summary>What kind of jobs can you do with the ute?</summary><p>Furniture delivery, marketplace pickups, boxes, selected household items, smaller room moves and other loads that fit safely within the ute's capacity.</p></details>
-        <details><summary>Do you provide a truck?</summary><p>RAM Movers currently operates with a ute. For suitable larger jobs, a larger vehicle may be arranged after checking availability and job requirements.</p></details>
-        <details><summary>How do I get an accurate quote?</summary><p>Send the pickup and delivery suburbs, clear photos or an item list, access details such as stairs, and your preferred date.</p></details>
-        <details><summary>Do you protect furniture?</summary><p>Moving straps and protective blankets are available for suitable items. The exact handling requirements are confirmed before the job.</p></details>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="quote" id="quote">
-    <div class="container quote-grid">
-      <div class="quote-copy">
-        <span class="badge" style="color:#fff;border-color:#fff;background:rgba(255,255,255,.13)">Free Quote</span>
-        <h2>Tell us what you need moved</h2>
-        <p>Complete the form and it will open a prepared text message to RAM Movers & Transport.</p>
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow dark">What We Do</span>
+          <h2>Moving services built around your needs</h2>
+          <p>From a single couch to a full household move, we provide practical and dependable moving support.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="icon">🏠</div>
+            <h3>House Moving</h3>
+            <p>Careful loading, transport and unloading for apartments, units and houses.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">🛋️</div>
+            <h3>Furniture Delivery</h3>
+            <p>Pickup and delivery for couches, beds, tables, appliances and marketplace purchases.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">🏢</div>
+            <h3>Office Relocation</h3>
+            <p>Efficient moving for desks, chairs, equipment and small business relocations.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">🎹</div>
+            <h3>Piano & Heavy Items</h3>
+            <p>Extra care for bulky, valuable and difficult-to-move items.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">🚚</div>
+            <h3>Transport Service</h3>
+            <p>Reliable local transport for boxed goods, equipment and general items.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon">📦</div>
+            <h3>Loading & Unloading</h3>
+            <p>Extra hands when you already have a truck, trailer, storage unit or container.</p>
+          </article>
+        </div>
       </div>
-      <form class="quote-form" onsubmit="sendQuote(event)">
-        <input id="name" type="text" placeholder="Your name" required />
-        <input id="phone" type="tel" placeholder="Your phone number" required />
-        <input id="pickup" type="text" placeholder="Pickup suburb" required />
-        <input id="dropoff" type="text" placeholder="Drop-off suburb" required />
-        <select id="service" required>
-          <option value="">Select a service</option>
-          <option>Furniture Delivery</option>
-          <option>Small Move</option>
-          <option>Loading & Unloading</option>
-          <option>Marketplace Pickup</option>
-          <option>Household Transport</option>
-          <option>Larger Job Enquiry</option>
-        </select>
-        <textarea id="details" placeholder="List the items, stairs/access details and preferred date"></textarea>
-        <button class="btn btn-dark" type="submit">Send Quote Request</button>
-      </form>
-    </div>
-  </section>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="photo photo-main">
+            <div class="photo-label">Your Ute / Truck Photo</div>
+          </div>
+          <div class="stat-card">
+            <strong>Melbourne</strong>
+            <span>& surrounding suburbs</span>
+          </div>
+        </div>
+        <div class="about-copy">
+          <span class="eyebrow dark">Why RAM Movers</span>
+          <h2>Professional service without the big-company attitude</h2>
+          <p>We understand that moving can be stressful. Our goal is to make the job simple, organised and affordable while treating your belongings with care.</p>
+          <div class="feature-list">
+            <div><span>01</span><p><strong>Careful handling</strong><br>Blankets, straps and secure loading methods.</p></div>
+            <div><span>02</span><p><strong>Clear communication</strong><br>Easy booking and honest updates.</p></div>
+            <div><span>03</span><p><strong>Flexible service</strong><br>Small deliveries, full moves and labour-only help.</p></div>
+          </div>
+          <a class="text-link" href="#quote">Plan your move →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="eyebrow dark">Simple Process</span>
+          <h2>Book your move in three steps</h2>
+        </div>
+        <div class="process-grid">
+          <div><span>1</span><h3>Request a Quote</h3><p>Send your pickup, drop-off, date and job details.</p></div>
+          <div><span>2</span><h3>Confirm the Booking</h3><p>We agree on timing, service and pricing.</p></div>
+          <div><span>3</span><h3>Move Day</h3><p>We arrive prepared and get the job done.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section reviews">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="eyebrow">Customer Feedback</span>
+          <h2>Built on reliable service</h2>
+        </div>
+        <div class="review-grid">
+          <article><div class="stars">★★★★★</div><p>“Easy to deal with, arrived on time and handled our furniture carefully.”</p><strong>Melbourne Customer</strong></article>
+          <article><div class="stars">★★★★★</div><p>“Good communication and fair pricing. The move was completed smoothly.”</p><strong>Local Move</strong></article>
+          <article><div class="stars">★★★★★</div><p>“Very helpful with loading and unloading. Would use again.”</p><strong>Furniture Delivery</strong></article>
+        </div>
+        <p class="review-note">Replace these sample reviews with genuine customer feedback before publishing.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-wrap">
+        <div>
+          <span class="eyebrow">Ready to move?</span>
+          <h2>Get a free quote today</h2>
+          <p>Call us or send the job details online.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-light" href="tel:+61480631657">0480 631 657</a>
+          <a class="btn btn-outline" href="#quote">Get Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="quote" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow dark">Contact RAM Movers</span>
+          <h2>Let’s organise your move</h2>
+          <p>Send us your details and we’ll help with the next step.</p>
+          <div class="contact-details">
+            <a href="tel:+61480631657"><span>Phone</span><strong>0480 631 657</strong></a>
+            <div><span>Service Area</span><strong>Melbourne & surrounding suburbs</strong></div>
+            <div><span>Hours</span><strong>Bookings available 7 days</strong></div>
+          </div>
+        </div>
+        <div class="contact-box">
+          <h3>What to include in your quote request</h3>
+          <ul>
+            <li>Pickup and drop-off suburbs</li>
+            <li>Number of bedrooms or items</li>
+            <li>Stairs, lifts or difficult access</li>
+            <li>Preferred moving date</li>
+            <li>Any heavy or fragile items</li>
+          </ul>
+          <a class="btn btn-primary full" href="sms:+61480631657">Text Us Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div><h4>RAM Movers & Transport</h4><p>Professional ute moving, furniture delivery and loading support across Melbourne and surrounding suburbs.</p></div>
-        <div><h4>Quick Links</h4><a href="#services">Services</a><a href="#about">About</a><a href="#equipment">Equipment</a><a href="#faq">FAQ</a></div>
-        <div><h4>Contact</h4><a href="tel:+61480631657">0480 631 657</a><span>Melbourne, Victoria</span></div>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#home">
+          <span class="brand-mark">RAM</span>
+          <span class="brand-text">MOVERS</span>
+        </a>
+        <p>Reliable moving and transport services across Melbourne.</p>
       </div>
-      <div class="copyright">© 2026 RAM Movers & Transport. All rights reserved.</div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">House Moving</a>
+        <a href="#services">Furniture Delivery</a>
+        <a href="#services">Office Relocation</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+61480631657">0480 631 657</a>
+        <span>Melbourne, Victoria</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 RAM Movers. All rights reserved.</span>
+      <span>ABN can be added here</span>
     </div>
   </footer>
 
-  <a class="btn mobile-call" href="tel:+61480631657">📞 Call RAM Movers</a>
+  <a class="floating-call" href="tel:+61480631657">☎ Call Now</a>
 
-  <script>
-    function sendQuote(event){
-      event.preventDefault();
-      const name = document.getElementById('name').value;
-      const phone = document.getElementById('phone').value;
-      const pickup = document.getElementById('pickup').value;
-      const dropoff = document.getElementById('dropoff').value;
-      const service = document.getElementById('service').value;
-      const details = document.getElementById('details').value;
-      const text =
-`Hi RAM Movers & Transport,
-
-Name: ${name}
-Phone: ${phone}
-Pickup: ${pickup}
-Drop-off: ${dropoff}
-Service: ${service}
-Details: ${details}`;
-      window.location.href = `sms:+61480631657?&body=${encodeURIComponent(text)}`;
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
