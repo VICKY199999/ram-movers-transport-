@@ -3,123 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="RAM Movers provides reliable house moving, furniture delivery, office relocation, piano moving and transport services across Melbourne.">
-  <title>RAM Movers | Melbourne Moving & Transport</title>
+  <meta name="description" content="RAM Movers provides professional house moving, furniture delivery, office relocation and piano moving services across Melbourne.">
+  <title>RAM Movers | Melbourne Moving Services</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Proudly serving Melbourne & surrounding suburbs</span>
+      <a href="tel:+61480631657">Call 0480 631 657</a>
+    </div>
+  </div>
+
+  <header>
     <div class="container nav-wrap">
-      <a class="brand" href="#home">
-        <span class="brand-mark">RAM</span>
-        <span class="brand-text">MOVERS</span>
+      <a href="#home" class="logo">
+        <span class="logo-badge">RAM</span>
+        <span class="logo-text">MOVERS</span>
       </a>
-      <button class="menu-toggle" aria-label="Open menu">☰</button>
-      <nav class="nav">
+
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+
+      <nav>
+        <a href="#home">Home</a>
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#reviews">Reviews</a>
-        <a href="#quote">Get a Quote</a>
+        <a href="#quote">Contact</a>
       </nav>
-      <a class="header-call" href="tel:+61480631657">Call 0480 631 657</a>
+
+      <a class="nav-call" href="tel:+61480631657">Call Now</a>
     </div>
   </header>
 
   <main>
     <section id="home" class="hero">
-      <div class="hero-overlay"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow">Melbourne Moving & Transport</span>
-          <h1>Move with confidence.<br><span>RAM Movers</span> gets it done.</h1>
-          <p>Reliable house moves, furniture delivery, office relocations and heavy-item transport across Melbourne and surrounding suburbs.</p>
+          <span class="eyebrow">Melbourne's trusted moving service</span>
+          <h1>Moving made <span>easy.</span></h1>
+          <p>Reliable house moving, furniture delivery, office relocations and heavy-item transport across Melbourne.</p>
+
           <div class="hero-actions">
-            <a class="btn btn-light" href="#quote">Get a Free Quote</a>
-            <a class="btn btn-outline" href="tel:+61480631657">Call Now</a>
+            <a class="btn saffron" href="tel:+61480631657">Call 0480 631 657</a>
+            <a class="btn outline" href="#quote">Get Free Quote</a>
           </div>
-          <div class="trust-row">
+
+          <div class="hero-points">
             <div><strong>Careful</strong><span>Handling</span></div>
             <div><strong>Flexible</strong><span>Bookings</span></div>
             <div><strong>Fair</strong><span>Pricing</span></div>
           </div>
         </div>
-        <div class="quote-card">
-          <span class="small-label">Quick Quote</span>
-          <h2>Tell us about your move</h2>
-          <form id="quoteForm">
-            <div class="form-grid">
-              <input type="text" id="name" placeholder="Your name" required>
-              <input type="tel" id="phone" placeholder="Phone number" required>
-              <input type="text" id="pickup" placeholder="Pickup suburb" required>
-              <input type="text" id="dropoff" placeholder="Drop-off suburb" required>
-              <select id="service" required>
-                <option value="">Select service</option>
-                <option>House Moving</option>
-                <option>Furniture Delivery</option>
-                <option>Office Relocation</option>
-                <option>Piano / Heavy Item Moving</option>
-                <option>Transport Service</option>
-              </select>
-              <input type="date" id="date">
-            </div>
-            <textarea id="details" placeholder="Describe the job, stairs, number of rooms or large items"></textarea>
-            <button class="btn btn-primary full" type="submit">Send Quote Request</button>
-            <p class="form-note">This opens a text message with your details ready to send.</p>
-          </form>
+
+        <div class="truck-scene" aria-label="RAM Movers truck illustration">
+          <div class="moon"></div>
+          <svg viewBox="0 0 900 520" role="img" aria-label="Black and saffron moving truck">
+            <rect width="900" height="520" fill="#090909"/>
+            <rect y="360" width="900" height="160" fill="#171717"/>
+            <rect x="85" y="125" width="510" height="250" rx="12" fill="#f59e0b"/>
+            <rect x="115" y="150" width="450" height="200" rx="8" fill="#0b0b0b"/>
+            <text x="340" y="240" text-anchor="middle" font-family="Montserrat, Arial" font-size="72" font-weight="900" fill="#f59e0b">RAM</text>
+            <text x="340" y="295" text-anchor="middle" font-family="Montserrat, Arial" font-size="34" font-weight="800" fill="#f59e0b" letter-spacing="8">MOVERS</text>
+            <rect x="595" y="200" width="180" height="175" rx="18" fill="#f59e0b"/>
+            <path d="M635 200h90l50 72v103H595V240z" fill="#f59e0b"/>
+            <rect x="635" y="220" width="92" height="62" rx="6" fill="#0b0b0b"/>
+            <rect x="735" y="282" width="40" height="42" fill="#0b0b0b"/>
+            <rect x="70" y="355" width="735" height="28" rx="12" fill="#f59e0b"/>
+            <circle cx="230" cy="390" r="58" fill="#050505" stroke="#f59e0b" stroke-width="12"/>
+            <circle cx="230" cy="390" r="22" fill="#f59e0b"/>
+            <circle cx="675" cy="390" r="58" fill="#050505" stroke="#f59e0b" stroke-width="12"/>
+            <circle cx="675" cy="390" r="22" fill="#f59e0b"/>
+            <rect x="115" y="316" width="120" height="16" rx="8" fill="#f59e0b"/>
+            <rect x="250" y="316" width="120" height="16" rx="8" fill="#f59e0b"/>
+            <rect x="385" y="316" width="120" height="16" rx="8" fill="#f59e0b"/>
+            <path d="M795 345h48v25h-48z" fill="#f59e0b"/>
+          </svg>
+          <div class="truck-caption">Professional moving across Melbourne</div>
         </div>
       </div>
     </section>
 
-    <section class="service-strip">
-      <div class="container strip-grid">
-        <span>✓ House Moves</span>
-        <span>✓ Furniture Delivery</span>
-        <span>✓ Office Moves</span>
-        <span>✓ Piano Moving</span>
-        <span>✓ Local Transport</span>
+    <section class="benefits">
+      <div class="container benefit-grid">
+        <div><span>01</span><strong>Free Quotes</strong><small>No obligation</small></div>
+        <div><span>02</span><strong>Affordable Rates</strong><small>Fair pricing</small></div>
+        <div><span>03</span><strong>Care & Protection</strong><small>Secure handling</small></div>
+        <div><span>04</span><strong>Reliable Service</strong><small>On-time support</small></div>
       </div>
     </section>
 
     <section id="services" class="section">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow dark">What We Do</span>
-          <h2>Moving services built around your needs</h2>
-          <p>From a single couch to a full household move, we provide practical and dependable moving support.</p>
+        <div class="section-title">
+          <span class="eyebrow">Our services</span>
+          <h2>We do more than just move</h2>
         </div>
+
         <div class="service-grid">
-          <article class="service-card">
-            <div class="icon">🏠</div>
+          <article>
+            <div class="service-icon">⌂</div>
             <h3>House Moving</h3>
-            <p>Careful loading, transport and unloading for apartments, units and houses.</p>
+            <p>From apartments to family homes, we handle your move with care.</p>
           </article>
-          <article class="service-card">
-            <div class="icon">🛋️</div>
+          <article>
+            <div class="service-icon">▣</div>
             <h3>Furniture Delivery</h3>
-            <p>Pickup and delivery for couches, beds, tables, appliances and marketplace purchases.</p>
+            <p>Reliable delivery for couches, beds, tables, appliances and large items.</p>
           </article>
-          <article class="service-card">
-            <div class="icon">🏢</div>
-            <h3>Office Relocation</h3>
-            <p>Efficient moving for desks, chairs, equipment and small business relocations.</p>
+          <article>
+            <div class="service-icon">♫</div>
+            <h3>Piano Moving</h3>
+            <p>Extra care for heavy, valuable and difficult-to-move items.</p>
           </article>
-          <article class="service-card">
-            <div class="icon">🎹</div>
-            <h3>Piano & Heavy Items</h3>
-            <p>Extra care for bulky, valuable and difficult-to-move items.</p>
-          </article>
-          <article class="service-card">
-            <div class="icon">🚚</div>
-            <h3>Transport Service</h3>
-            <p>Reliable local transport for boxed goods, equipment and general items.</p>
-          </article>
-          <article class="service-card">
-            <div class="icon">📦</div>
-            <h3>Loading & Unloading</h3>
-            <p>Extra hands when you already have a truck, trailer, storage unit or container.</p>
+          <article>
+            <div class="service-icon">▦</div>
+            <h3>Office Relocations</h3>
+            <p>Efficient transport for desks, chairs, equipment and small offices.</p>
           </article>
         </div>
       </div>
@@ -127,95 +130,97 @@
 
     <section id="about" class="section about">
       <div class="container about-grid">
-        <div class="about-visual">
-          <div class="photo photo-main">
-            <div class="photo-label">Your Ute / Truck Photo</div>
-          </div>
-          <div class="stat-card">
-            <strong>Melbourne</strong>
-            <span>& surrounding suburbs</span>
+        <div class="about-card">
+          <div class="mini-truck">
+            <svg viewBox="0 0 500 280">
+              <rect width="500" height="280" fill="#0a0a0a"/>
+              <rect x="55" y="75" width="280" height="125" rx="10" fill="#f59e0b"/>
+              <rect x="335" y="110" width="95" height="90" rx="10" fill="#f59e0b"/>
+              <rect x="355" y="125" width="55" height="30" fill="#0a0a0a"/>
+              <circle cx="150" cy="210" r="34" fill="#050505" stroke="#f59e0b" stroke-width="8"/>
+              <circle cx="380" cy="210" r="34" fill="#050505" stroke="#f59e0b" stroke-width="8"/>
+              <text x="195" y="145" text-anchor="middle" font-family="Montserrat" font-size="34" font-weight="900" fill="#0a0a0a">RAM</text>
+              <text x="195" y="174" text-anchor="middle" font-family="Montserrat" font-size="18" font-weight="900" fill="#0a0a0a">MOVERS</text>
+            </svg>
           </div>
         </div>
-        <div class="about-copy">
-          <span class="eyebrow dark">Why RAM Movers</span>
-          <h2>Professional service without the big-company attitude</h2>
-          <p>We understand that moving can be stressful. Our goal is to make the job simple, organised and affordable while treating your belongings with care.</p>
-          <div class="feature-list">
-            <div><span>01</span><p><strong>Careful handling</strong><br>Blankets, straps and secure loading methods.</p></div>
-            <div><span>02</span><p><strong>Clear communication</strong><br>Easy booking and honest updates.</p></div>
-            <div><span>03</span><p><strong>Flexible service</strong><br>Small deliveries, full moves and labour-only help.</p></div>
-          </div>
-          <a class="text-link" href="#quote">Plan your move →</a>
-        </div>
-      </div>
-    </section>
 
-    <section class="process section">
-      <div class="container">
-        <div class="section-heading center">
-          <span class="eyebrow dark">Simple Process</span>
-          <h2>Book your move in three steps</h2>
-        </div>
-        <div class="process-grid">
-          <div><span>1</span><h3>Request a Quote</h3><p>Send your pickup, drop-off, date and job details.</p></div>
-          <div><span>2</span><h3>Confirm the Booking</h3><p>We agree on timing, service and pricing.</p></div>
-          <div><span>3</span><h3>Move Day</h3><p>We arrive prepared and get the job done.</p></div>
+        <div>
+          <span class="eyebrow">Why choose RAM Movers</span>
+          <h2>Professional service without the big-company attitude</h2>
+          <p>We make moving simpler with clear communication, careful handling and flexible booking options.</p>
+
+          <ul class="check-list">
+            <li>Careful loading and unloading</li>
+            <li>Local Melbourne service</li>
+            <li>Furniture, office and house moves</li>
+            <li>Flexible booking times</li>
+          </ul>
+
+          <a class="btn saffron" href="#quote">Plan Your Move</a>
         </div>
       </div>
     </section>
 
     <section id="reviews" class="section reviews">
       <div class="container">
-        <div class="section-heading center">
-          <span class="eyebrow">Customer Feedback</span>
-          <h2>Built on reliable service</h2>
+        <div class="section-title">
+          <span class="eyebrow">Customer feedback</span>
+          <h2>Reliable service people remember</h2>
         </div>
+
         <div class="review-grid">
-          <article><div class="stars">★★★★★</div><p>“Easy to deal with, arrived on time and handled our furniture carefully.”</p><strong>Melbourne Customer</strong></article>
-          <article><div class="stars">★★★★★</div><p>“Good communication and fair pricing. The move was completed smoothly.”</p><strong>Local Move</strong></article>
-          <article><div class="stars">★★★★★</div><p>“Very helpful with loading and unloading. Would use again.”</p><strong>Furniture Delivery</strong></article>
+          <article>
+            <div class="stars">★★★★★</div>
+            <p>“Easy to deal with, arrived on time and handled the furniture carefully.”</p>
+            <strong>Melbourne customer</strong>
+          </article>
+          <article>
+            <div class="stars">★★★★★</div>
+            <p>“Good communication and fair pricing. The move went smoothly.”</p>
+            <strong>Local move</strong>
+          </article>
+          <article>
+            <div class="stars">★★★★★</div>
+            <p>“Very helpful with loading and unloading. Would use again.”</p>
+            <strong>Furniture delivery</strong>
+          </article>
         </div>
-        <p class="review-note">Replace these sample reviews with genuine customer feedback before publishing.</p>
+        <p class="sample-note">Replace these sample reviews with real customer feedback before publishing.</p>
       </div>
     </section>
 
-    <section class="cta">
-      <div class="container cta-wrap">
+    <section id="quote" class="section quote-section">
+      <div class="container quote-grid">
         <div>
-          <span class="eyebrow">Ready to move?</span>
-          <h2>Get a free quote today</h2>
-          <p>Call us or send the job details online.</p>
+          <span class="eyebrow">Get a free quote</span>
+          <h2>Tell us about your move</h2>
+          <p>Complete the form and your phone will open a text message ready to send to RAM Movers.</p>
         </div>
-        <div class="cta-actions">
-          <a class="btn btn-light" href="tel:+61480631657">0480 631 657</a>
-          <a class="btn btn-outline" href="#quote">Get Quote</a>
-        </div>
-      </div>
-    </section>
 
-    <section id="quote" class="section contact">
-      <div class="container contact-grid">
-        <div>
-          <span class="eyebrow dark">Contact RAM Movers</span>
-          <h2>Let’s organise your move</h2>
-          <p>Send us your details and we’ll help with the next step.</p>
-          <div class="contact-details">
-            <a href="tel:+61480631657"><span>Phone</span><strong>0480 631 657</strong></a>
-            <div><span>Service Area</span><strong>Melbourne & surrounding suburbs</strong></div>
-            <div><span>Hours</span><strong>Bookings available 7 days</strong></div>
+        <form id="quoteForm">
+          <div class="form-row">
+            <input id="name" type="text" placeholder="Your name" required>
+            <input id="phone" type="tel" placeholder="Phone number" required>
           </div>
-        </div>
-        <div class="contact-box">
-          <h3>What to include in your quote request</h3>
-          <ul>
-            <li>Pickup and drop-off suburbs</li>
-            <li>Number of bedrooms or items</li>
-            <li>Stairs, lifts or difficult access</li>
-            <li>Preferred moving date</li>
-            <li>Any heavy or fragile items</li>
-          </ul>
-          <a class="btn btn-primary full" href="sms:+61480631657">Text Us Now</a>
-        </div>
+          <div class="form-row">
+            <input id="pickup" type="text" placeholder="Pickup suburb" required>
+            <input id="dropoff" type="text" placeholder="Drop-off suburb" required>
+          </div>
+          <div class="form-row">
+            <select id="service" required>
+              <option value="">Select service</option>
+              <option>House Moving</option>
+              <option>Furniture Delivery</option>
+              <option>Office Relocation</option>
+              <option>Piano Moving</option>
+              <option>Transport Service</option>
+            </select>
+            <input id="date" type="date">
+          </div>
+          <textarea id="details" placeholder="Number of rooms, stairs, heavy items or other details"></textarea>
+          <button class="btn saffron full" type="submit">Send Quote Request</button>
+        </form>
       </div>
     </section>
   </main>
@@ -223,32 +228,28 @@
   <footer>
     <div class="container footer-grid">
       <div>
-        <a class="brand footer-brand" href="#home">
-          <span class="brand-mark">RAM</span>
-          <span class="brand-text">MOVERS</span>
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-badge">RAM</span>
+          <span class="logo-text">MOVERS</span>
         </a>
-        <p>Reliable moving and transport services across Melbourne.</p>
+        <p>Moving made easy across Melbourne.</p>
       </div>
       <div>
-        <h4>Services</h4>
-        <a href="#services">House Moving</a>
-        <a href="#services">Furniture Delivery</a>
-        <a href="#services">Office Relocation</a>
-      </div>
-      <div>
-        <h4>Contact</h4>
+        <strong>Contact</strong>
         <a href="tel:+61480631657">0480 631 657</a>
         <span>Melbourne, Victoria</span>
       </div>
+      <div>
+        <strong>Services</strong>
+        <a href="#services">House moving</a>
+        <a href="#services">Furniture delivery</a>
+        <a href="#services">Office relocation</a>
+      </div>
     </div>
-    <div class="container footer-bottom">
-      <span>© 2026 RAM Movers. All rights reserved.</span>
-      <span>ABN can be added here</span>
-    </div>
+    <div class="container footer-bottom">© 2026 RAM Movers. All rights reserved.</div>
   </footer>
 
-  <a class="floating-call" href="tel:+61480631657">☎ Call Now</a>
-
+  <a class="floating-call" href="tel:+61480631657">Call Now</a>
   <script src="script.js"></script>
 </body>
 </html>
