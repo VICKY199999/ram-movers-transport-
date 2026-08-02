@@ -3,167 +3,310 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ram Moving and Transport provides professional moving, furniture delivery and transport services across Melbourne.">
+  <meta name="description" content="Ram Moving and Transport provides professional house moving, office relocation, furniture delivery and transport services across Melbourne.">
+  <meta name="keywords" content="Melbourne removalists, house movers Melbourne, furniture delivery Melbourne, office relocation Melbourne">
+  <meta name="theme-color" content="#090d16">
   <title>Ram Moving and Transport | Melbourne Removalists</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header">
-  <div class="container nav">
-    <a class="logo" href="#home">
-      <span class="logo-mark">RM</span>
-      <span><strong>Ram Moving</strong><small>& Transport</small></span>
-    </a>
-    <button class="menu-button" aria-label="Open menu">☰</button>
-    <nav class="menu">
-      <a href="#services">Services</a>
-      <a href="#why">Why Us</a>
-      <a href="#process">How It Works</a>
-      <a href="#areas">Areas</a>
-      <a class="nav-cta" href="tel:+61483749137">Call Now</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-<section class="hero" id="home">
-  <div class="container hero-grid">
-    <div>
-      <span class="eyebrow">Melbourne Removalists</span>
-      <h1>Strong hands.<br><span>Safe moves.</span><br>Zero stress.</h1>
-      <p>Professional house moving, office relocation, furniture delivery and transport services across Melbourne.</p>
-      <div class="actions">
-        <a class="button primary" href="tel:+61483749137">Call 0483 749 137</a>
-        <a class="button secondary" href="#quote">Get Free Quote</a>
-      </div>
-      <div class="stats">
-        <div><strong>7 Days</strong><span>Flexible bookings</span></div>
-        <div><strong>Melbourne-wide</strong><span>Local service</span></div>
-        <div><strong>Careful Handling</strong><span>Blankets and straps</span></div>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Professional Melbourne removalists</span>
+      <div>
+        <a href="tel:+61483749137">0483 749 137</a>
+        <a href="mailto:rammovingandtransport@gmail.com">rammovingandtransport@gmail.com</a>
       </div>
     </div>
+  </div>
 
-    <div class="quote-card" id="quote">
-      <span class="eyebrow orange">Fast Free Quote</span>
-      <h2>Plan your move today</h2>
-      <form id="quoteForm">
-        <label>Name<input id="name" type="text" placeholder="Full name" required></label>
-        <label>Phone<input id="phone" type="tel" placeholder="04xx xxx xxx" required></label>
-        <div class="two">
-          <label>Moving from<input id="from" type="text" placeholder="Suburb" required></label>
-          <label>Moving to<input id="to" type="text" placeholder="Suburb" required></label>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Ram Moving and Transport">
+        <span class="brand-icon">RM</span>
+        <span class="brand-text"><strong>RAM MOVING</strong><small>& TRANSPORT</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="main-nav">
+        <a href="#services">Services</a>
+        <a href="#about">Why Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#areas">Areas</a>
+        <a href="#quote" class="nav-button">Free Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow one"></div>
+      <div class="hero-glow two"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <span class="pill">Melbourne Moving Specialists</span>
+          <h1>MOVE <span>STRONG.</span><br>MOVE SAFE.<br>MOVE WITH RAM.</h1>
+          <p>Professional house moving, office relocation, furniture delivery and transport services across Melbourne. Careful handling, clear communication and reliable service from start to finish.</p>
+          <div class="hero-actions">
+            <a href="tel:+61483749137" class="btn btn-primary">Call 0483 749 137</a>
+            <a href="#quote" class="btn btn-outline">Get Free Quote</a>
+          </div>
+          <div class="hero-points">
+            <span>✓ 7-day availability</span>
+            <span>✓ Melbourne-wide service</span>
+            <span>✓ Furniture protection</span>
+          </div>
         </div>
-        <label>Service
-          <select id="service" required>
-            <option value="">Choose a service</option>
-            <option>House moving</option>
-            <option>Apartment moving</option>
-            <option>Office relocation</option>
-            <option>Furniture delivery</option>
-            <option>General transport</option>
-            <option>Rubbish removal</option>
-          </select>
-        </label>
-        <label>Details<textarea id="details" rows="4" placeholder="Date, house size, stairs, large items"></textarea></label>
-        <button class="button primary full" type="submit">Send Quote Request</button>
-      </form>
-    </div>
-  </div>
-</section>
 
-<section class="trust">
-  <div class="container trust-grid">
-    <span>Professional Service</span>
-    <span>Clear Communication</span>
-    <span>Furniture Protected</span>
-    <span>Local Melbourne Business</span>
-  </div>
-</section>
+        <div class="hero-visual reveal delay-1">
+          <div class="truck-card">
+            <div class="truck-scene">
+              <div class="sun"></div>
+              <div class="city"></div>
+              <div class="road"></div>
+              <div class="truck">
+                <div class="truck-box">
+                  <span>RAM</span>
+                  <small>MOVING & TRANSPORT</small>
+                </div>
+                <div class="truck-cab"></div>
+                <div class="wheel wheel-a"></div>
+                <div class="wheel wheel-b"></div>
+              </div>
+            </div>
+            <div class="truck-info">
+              <div><strong>Fast Quotes</strong><span>Simple booking process</span></div>
+              <div><strong>Safe Handling</strong><span>Blankets, straps and care</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<section class="section" id="services">
-  <div class="container">
-    <div class="heading">
-      <span class="eyebrow orange">Our Services</span>
-      <h2>Everything you need for a smooth move</h2>
-      <p>Reliable moving and transport support for homes, apartments, offices and individual items.</p>
-    </div>
-    <div class="cards">
-      <article><b>01</b><h3>House Moving</h3><p>Careful loading, transport and unloading for small and large home moves.</p></article>
-      <article><b>02</b><h3>Apartment Moving</h3><p>Organised moving for units, apartments, stairs and lift access.</p></article>
-      <article><b>03</b><h3>Office Relocation</h3><p>Efficient business moves designed to reduce disruption and downtime.</p></article>
-      <article><b>04</b><h3>Furniture Delivery</h3><p>Pickup and delivery for couches, beds, tables and bulky items.</p></article>
-      <article><b>05</b><h3>General Transport</h3><p>Flexible transport support for local deliveries and one-off jobs.</p></article>
-      <article><b>06</b><h3>Rubbish Removal</h3><p>Removal of unwanted household items and non-hazardous general waste.</p></article>
-    </div>
-  </div>
-</section>
+      <div class="container trust-strip">
+        <div><strong>LOCAL</strong><span>Melbourne business</span></div>
+        <div><strong>RELIABLE</strong><span>Clear arrival times</span></div>
+        <div><strong>CAREFUL</strong><span>Furniture protected</span></div>
+        <div><strong>FLEXIBLE</strong><span>Weekday and weekend jobs</span></div>
+      </div>
+    </section>
 
-<section class="section dark" id="why">
-  <div class="container split">
-    <div>
-      <span class="eyebrow">Why Choose Us</span>
-      <h2>Powerful service.<br>Professional care.</h2>
-      <p>We focus on punctuality, communication and safe handling from the first call to the final item.</p>
-      <a class="button light" href="#quote">Book Your Move</a>
-    </div>
-    <div class="features">
-      <div><span>✓</span><section><h3>Careful handling</h3><p>Furniture is protected using blankets, straps and secure loading.</p></section></div>
-      <div><span>✓</span><section><h3>Clear communication</h3><p>We confirm the important details and keep you updated.</p></section></div>
-      <div><span>✓</span><section><h3>Flexible bookings</h3><p>Weekday and weekend jobs are available by arrangement.</p></section></div>
-      <div><span>✓</span><section><h3>Melbourne coverage</h3><p>Servicing western, northern, eastern and south-eastern suburbs.</p></section></div>
-    </div>
-  </div>
-</section>
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Our Services</span>
+          <h2>Professional moving services built around your job</h2>
+          <p>Whether you are moving a full home, one bulky item or an office, we make the process simple and organised.</p>
+        </div>
 
-<section class="section" id="process">
-  <div class="container">
-    <div class="heading">
-      <span class="eyebrow orange">How It Works</span>
-      <h2>Three simple steps</h2>
-    </div>
-    <div class="steps">
-      <article><b>1</b><h3>Request a quote</h3><p>Send us the locations, date and items being moved.</p></article>
-      <article><b>2</b><h3>Confirm booking</h3><p>We confirm timing, service details and agreed pricing.</p></article>
-      <article><b>3</b><h3>Move with confidence</h3><p>We arrive ready to load, secure, transport and unload.</p></article>
-    </div>
-  </div>
-</section>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span class="service-number">01</span>
+            <div class="service-icon">⌂</div>
+            <h3>House Moving</h3>
+            <p>Careful loading, secure transport and organised unloading for small and large home moves.</p>
+            <a href="#quote">Request quote →</a>
+          </article>
+          <article class="service-card reveal delay-1">
+            <span class="service-number">02</span>
+            <div class="service-icon">▦</div>
+            <h3>Apartment Moving</h3>
+            <p>Support for apartments, lifts, stairs and tight access with a clear moving plan.</p>
+            <a href="#quote">Request quote →</a>
+          </article>
+          <article class="service-card reveal delay-2">
+            <span class="service-number">03</span>
+            <div class="service-icon">▣</div>
+            <h3>Office Relocation</h3>
+            <p>Efficient business moves designed to reduce disruption and get your team set up sooner.</p>
+            <a href="#quote">Request quote →</a>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">04</span>
+            <div class="service-icon">▤</div>
+            <h3>Furniture Delivery</h3>
+            <p>Pickup and delivery for couches, beds, tables, appliances and other bulky items.</p>
+            <a href="#quote">Request quote →</a>
+          </article>
+          <article class="service-card reveal delay-1">
+            <span class="service-number">05</span>
+            <div class="service-icon">⇄</div>
+            <h3>General Transport</h3>
+            <p>Flexible transport support for local deliveries, one-off jobs and business needs.</p>
+            <a href="#quote">Request quote →</a>
+          </article>
+          <article class="service-card reveal delay-2">
+            <span class="service-number">06</span>
+            <div class="service-icon">✦</div>
+            <h3>Rubbish Removal</h3>
+            <p>Removal of unwanted household items and general non-hazardous waste by arrangement.</p>
+            <a href="#quote">Request quote →</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<section class="section soft" id="areas">
-  <div class="container split">
-    <div>
-      <span class="eyebrow orange">Service Areas</span>
-      <h2>Moving across Melbourne</h2>
-      <p>Based in Melbourne and servicing local suburbs. Longer-distance jobs may be available by arrangement.</p>
+    <section class="section dark-section" id="about">
+      <div class="container about-layout">
+        <div class="about-copy reveal">
+          <span class="eyebrow">Why Choose Ram</span>
+          <h2>POWERFUL SERVICE.<br><span>PROFESSIONAL CARE.</span></h2>
+          <p>Moving can be stressful. Our goal is to make it feel organised, safe and straightforward. We focus on the details that matter: being ready, protecting your belongings and communicating clearly.</p>
+          <div class="about-stats">
+            <div><strong>7</strong><span>Days available</span></div>
+            <div><strong>100%</strong><span>Focus on care</span></div>
+            <div><strong>1</strong><span>Simple contact point</span></div>
+          </div>
+        </div>
+        <div class="feature-list reveal delay-1">
+          <article><span>✓</span><div><h3>Careful handling</h3><p>Blankets, straps and secure loading methods help protect your belongings.</p></div></article>
+          <article><span>✓</span><div><h3>Clear pricing</h3><p>We discuss the service and expected costs before the booking is confirmed.</p></div></article>
+          <article><span>✓</span><div><h3>Flexible service</h3><p>Weekday, weekend and short-notice jobs may be available.</p></div></article>
+          <article><span>✓</span><div><h3>Melbourne coverage</h3><p>Servicing western, northern, eastern and south-eastern suburbs.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">How It Works</span>
+          <h2>A simple process from quote to completion</h2>
+        </div>
+        <div class="process-grid">
+          <article class="reveal"><span>1</span><h3>Tell us about the job</h3><p>Share the date, locations, property size, access details and large items.</p></article>
+          <article class="reveal delay-1"><span>2</span><h3>Receive your quote</h3><p>We review the job details and confirm the service, timing and pricing.</p></article>
+          <article class="reveal delay-2"><span>3</span><h3>Move with confidence</h3><p>We arrive ready to load, secure, transport and unload your belongings.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Built For Real Moves</span>
+          <h2>Professional presentation from the first call</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-card large reveal"><div class="gallery-overlay"><span>House Moves</span><strong>Handled with care</strong></div></div>
+          <div class="gallery-card small one reveal delay-1"><div class="gallery-overlay"><span>Furniture</span><strong>Protected and secured</strong></div></div>
+          <div class="gallery-card small two reveal delay-2"><div class="gallery-overlay"><span>Transport</span><strong>Reliable local service</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Customer Experience</span>
+          <h2>The kind of service customers remember</h2>
+          <p>These example review cards can be replaced with your real Google reviews as you collect them.</p>
+        </div>
+        <div class="review-grid">
+          <article class="review-card reveal">
+            <div class="stars">★★★★★</div>
+            <p>“Professional, easy to communicate with and very careful with the furniture. The whole move felt organised.”</p>
+            <strong>Sample Customer</strong><span>Melbourne</span>
+          </article>
+          <article class="review-card reveal delay-1">
+            <div class="stars">★★★★★</div>
+            <p>“Arrived ready to work, secured everything properly and made the job much less stressful.”</p>
+            <strong>Sample Customer</strong><span>Western Suburbs</span>
+          </article>
+          <article class="review-card reveal delay-2">
+            <div class="stars">★★★★★</div>
+            <p>“Clear communication from the quote through to delivery. I would happily use the service again.”</p>
+            <strong>Sample Customer</strong><span>Melbourne CBD</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section areas-section" id="areas">
+      <div class="container areas-layout">
+        <div class="reveal">
+          <span class="eyebrow">Service Areas</span>
+          <h2>Moving across Melbourne</h2>
+          <p>Based in Melbourne and servicing suburbs across the west, north, east and south-east. Longer-distance jobs can be discussed.</p>
+          <a href="tel:+61483749137" class="text-link">Check your suburb →</a>
+        </div>
+        <div class="area-tags reveal delay-1">
+          <span>Truganina</span><span>Tarneit</span><span>Werribee</span><span>Point Cook</span>
+          <span>Hoppers Crossing</span><span>Sunshine</span><span>Footscray</span><span>Melton</span>
+          <span>Melbourne CBD</span><span>All Melbourne</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-section" id="quote">
+      <div class="container quote-layout">
+        <div class="quote-copy reveal">
+          <span class="eyebrow">Free Quote</span>
+          <h2>Ready to plan your move?</h2>
+          <p>Fill in the form and your email app will open with all the job details ready to send.</p>
+          <div class="contact-list">
+            <a href="tel:+61483749137"><span>Call</span><strong>0483 749 137</strong></a>
+            <a href="mailto:rammovingandtransport@gmail.com"><span>Email</span><strong>rammovingandtransport@gmail.com</strong></a>
+            <a href="https://wa.me/61483749137" target="_blank" rel="noopener"><span>WhatsApp</span><strong>Message now</strong></a>
+          </div>
+        </div>
+
+        <form class="quote-form reveal delay-1" id="quoteForm">
+          <div class="form-title"><span>FAST QUOTE REQUEST</span><h3>Tell us about your move</h3></div>
+          <div class="form-row">
+            <label>Full name<input id="name" type="text" placeholder="Your name" required></label>
+            <label>Phone number<input id="phone" type="tel" placeholder="04xx xxx xxx" required></label>
+          </div>
+          <div class="form-row">
+            <label>Moving from<input id="from" type="text" placeholder="Suburb" required></label>
+            <label>Moving to<input id="to" type="text" placeholder="Suburb" required></label>
+          </div>
+          <div class="form-row">
+            <label>Moving date<input id="date" type="date"></label>
+            <label>Service<select id="service" required>
+              <option value="">Choose service</option>
+              <option>House moving</option>
+              <option>Apartment moving</option>
+              <option>Office relocation</option>
+              <option>Furniture delivery</option>
+              <option>General transport</option>
+              <option>Rubbish removal</option>
+            </select></label>
+          </div>
+          <label>Job details<textarea id="details" rows="5" placeholder="House size, stairs, lift access, large items and anything else we should know"></textarea></label>
+          <button class="btn btn-primary full-width" type="submit">Send Quote Request</button>
+          <small>Submitting opens your email app with the details filled in.</small>
+        </form>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-cta-inner">
+        <div><span>MOVE WITH CONFIDENCE</span><h2>Call Ram Moving and Transport today.</h2></div>
+        <a href="tel:+61483749137" class="btn btn-light">0483 749 137</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-layout">
+      <div>
+        <a class="brand" href="#home">
+          <span class="brand-icon">RM</span>
+          <span class="brand-text"><strong>RAM MOVING</strong><small>& TRANSPORT</small></span>
+        </a>
+        <p>Professional moving and transport services across Melbourne.</p>
+      </div>
+      <div><h4>Services</h4><a href="#services">House moving</a><a href="#services">Office relocation</a><a href="#services">Furniture delivery</a></div>
+      <div><h4>Contact</h4><a href="tel:+61483749137">0483 749 137</a><a href="mailto:rammovingandtransport@gmail.com">rammovingandtransport@gmail.com</a></div>
     </div>
-    <div class="tags">
-      <span>Truganina</span><span>Tarneit</span><span>Werribee</span><span>Point Cook</span>
-      <span>Hoppers Crossing</span><span>Sunshine</span><span>Melton</span><span>Footscray</span>
-      <span>Melbourne CBD</span><span>All Melbourne</span>
-    </div>
-  </div>
-</section>
+    <div class="container footer-bottom">© <span id="year"></span> Ram Moving and Transport. All rights reserved.</div>
+  </footer>
 
-<section class="cta">
-  <div class="container cta-inner">
-    <div><small>MOVE WITH CONFIDENCE</small><h2>Get your free quote today.</h2></div>
-    <a class="button light" href="tel:+61483749137">Call Now</a>
-  </div>
-</section>
-</main>
+  <a class="whatsapp-float" href="https://wa.me/61483749137" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WA</a>
+  <a class="mobile-call" href="tel:+61483749137">Call 0483 749 137</a>
 
-<footer>
-  <div class="container footer-grid">
-    <div class="logo"><span class="logo-mark">RM</span><span><strong>Ram Moving</strong><small>& Transport</small></span></div>
-    <p>Professional moving and transport services across Melbourne.</p>
-    <p>© <span id="year"></span> Ram Moving and Transport</p>
-  </div>
-</footer>
-
-<a class="floating-call" href="tel:+61483749137">Call Now</a>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
