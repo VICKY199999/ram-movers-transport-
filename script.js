@@ -1,31 +1,17 @@
-const menuButton = document.querySelector('.menu-btn');
-const nav = document.querySelector('.nav');
-
-menuButton.addEventListener('click', () => nav.classList.toggle('open'));
-document.querySelectorAll('.nav a').forEach(link => {
-  link.addEventListener('click', () => nav.classList.remove('open'));
-});
-
-document.getElementById('quoteForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  const name = document.getElementById('name').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const pickup = document.getElementById('pickup').value.trim();
-  const dropoff = document.getElementById('dropoff').value.trim();
-  const service = document.getElementById('service').value;
-  const date = document.getElementById('date').value || 'Not confirmed';
-  const details = document.getElementById('details').value.trim() || 'No extra details';
-
-  const message = `Hi RAM Movers, I would like a quote.
-
-Name: ${name}
-Phone: ${phone}
-Service: ${service}
-Pickup: ${pickup}
-Drop-off: ${dropoff}
-Date: ${date}
-Details: ${details}`;
-
-  window.location.href = `sms:+61480631657?body=${encodeURIComponent(message)}`;
+const menuButton=document.querySelector('.menu-button');
+const menu=document.querySelector('.menu');
+menuButton.addEventListener('click',()=>menu.classList.toggle('open'));
+document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('quoteForm').addEventListener('submit',function(e){
+e.preventDefault();
+const subject=encodeURIComponent('Quote Request - Ram Moving and Transport');
+const body=encodeURIComponent(
+`Name: ${document.getElementById('name').value}
+Phone: ${document.getElementById('phone').value}
+Moving from: ${document.getElementById('from').value}
+Moving to: ${document.getElementById('to').value}
+Service: ${document.getElementById('service').value}
+Details: ${document.getElementById('details').value}`);
+window.location.href=`mailto:rammovingandtransport@gmail.com?subject=${subject}&body=${body}`;
 });
