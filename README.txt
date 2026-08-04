@@ -1,21 +1,15 @@
-RAM MOVERS PREMIUM WEBSITE
+RAM MOVING & TRANSPORT WEBSITE
 
-FILES
-- index.html
-- style.css
-- script.js
+Correct phone number used: 0483 749 137
+Email: rammovingandtransport@gmail.com
 
-HOW TO USE
-1. Upload all three files to the same folder on GitHub.
-2. Open repository Settings.
-3. Go to Pages.
-4. Choose "Deploy from a branch".
-5. Select main branch and root folder.
-6. Save.
+HOW TO UPLOAD TO GITHUB
+1. Download and unzip this ZIP file.
+2. Open your website repository on GitHub.
+3. Click Add file > Upload files.
+4. Upload index.html, styles.css, script.js and the assets folder.
+5. Scroll down and click Commit changes.
+6. Wait 2-5 minutes and refresh your website.
 
-IMPORTANT BEFORE PUBLISHING
-- Replace the sample reviews with genuine customer reviews.
-- Add your own ute or truck photo.
-- Replace the placeholder ABN text with your real ABN if you want it shown.
-- Add an email address if you want email contact.
-- The quote form opens a text message to 0480 631 657.
+IMPORTANT
+Upload the files inside the folder, not the ZIP file itself.
