@@ -1,0 +1,28 @@
+RAM MOVING & TRANSPORT — GITHUB UPLOAD STEPS
+
+This updated version includes:
+- Your website logo
+- Correct phone number: 0483 749 137
+- A square favicon for Google/browser tabs
+
+IMPORTANT: Upload the files INSIDE this folder, not the ZIP itself.
+
+1. Download ram-moving-transport-website-with-favicon.zip.
+2. Right-click it and select Extract All.
+3. Open your website repository on GitHub.
+4. Click Add file, then Upload files.
+5. Delete or replace the old website files if GitHub asks.
+6. Drag all extracted files and the assets folder into GitHub:
+   index.html
+   styles.css
+   script.js
+   favicon.ico
+   assets folder
+7. Scroll down and click Commit changes.
+8. Open Settings > Pages and make sure GitHub Pages is using the main branch and root folder.
+9. Wait a few minutes, then open your website and press Ctrl + F5 to refresh.
+
+For Google search results:
+- The favicon is now installed correctly on the website.
+- Google must crawl the updated website before the icon can appear in search.
+- Use Google Search Console URL Inspection and click Request indexing for your homepage.
